@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard | ExamPro Demo</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand">ExamPro</a>
+        <div class="nav-links">
+            <span>Welcome, Demo Student</span>
+            <a href="index.html" class="btn btn-outline">Logout</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="dashboard-header" style="margin-bottom: 2rem;">
+            <h1>Student Dashboard</h1>
+            <p style="color: var(--text-secondary);">Manage your exams and view your performance.</p>
+        </div>
+
+        <div class="grid">
+            <div class="glass-card">
+                <h3>Data Analytics Fundamentals</h3>
+                <p style="color: var(--text-secondary); margin: 0.5rem 0 1.5rem 0;">Duration: 15 mins | Marks: 50</p>
+                <a href="demo_exam.html" class="btn btn-primary"
+                    style="width: 100%; display: block; text-align: center;">Start Exam</a>
+            </div>
+
+            <div class="glass-card">
+                <h3>Python Programming</h3>
+                <p style="color: var(--text-secondary); margin: 0.5rem 0 1.5rem 0;">Duration: 30 mins | Marks: 100</p>
+                <div class="btn btn-outline"
+                    style="width: 100%; cursor: not-allowed; opacity: 0.5; text-align: center;">Locked</div>
+            </div>
+        </div>
+
+        <h2 style="margin-top: 3rem; margin-bottom: 1.5rem;">Recent Results</h2>
+        <div class="glass-card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Exam Name</th>
+                        <th>Date</th>
+                        <th>Score</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>General Knowledge</td>
+                        <td>2026-02-09</td>
+                        <td>45/50</td>
+                        <td><a href="demo_result.html" style="color: var(--primary-color);">View More</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

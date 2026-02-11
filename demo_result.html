@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results | ExamPro Demo</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand">ExamPro</a>
+        <div class="nav-links">
+            <a href="demo_dashboard.html">Dashboard</a>
+        </div>
+    </nav>
+
+    <div class="container" style="display: flex; justify-content: center; align-items: center; min-height: 80vh;">
+        <div class="auth-container glass-card" style="text-align: center; width: 100%; max-width: 500px;">
+            <h1 style="color: var(--primary-color); font-size: 3rem; margin-bottom: 1rem;">🎉</h1>
+            <h2>Exam Completed!</h2>
+            <p style="color: var(--text-secondary); margin: 1rem 0 2rem 0;">Exam: Data Analytics Fundamentals</p>
+
+            <div style="background: rgba(99, 102, 241, 0.1); padding: 2rem; border-radius: 15px; margin-bottom: 2rem;">
+                <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Your Score</p>
+                <h1 style="font-size: 4rem;">5 / 5</h1>
+            </div>
+
+            <div style="display: flex; gap: 1rem;">
+                <a href="demo_dashboard.html" class="btn btn-outline" style="flex: 1;">Back to Home</a>
+                <button onclick="alert('Demo Certificate Generated!')" class="btn btn-primary" style="flex: 1;">Download
+                    Certificate</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

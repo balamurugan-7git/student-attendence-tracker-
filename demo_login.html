@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | ExamPro Demo</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand">ExamPro</a>
+    </nav>
+
+    <div class="container" style="display: flex; justify-content: center; align-items: center; min-height: 80vh;">
+        <div class="auth-container glass-card" style="width: 100%; max-width: 400px;">
+            <h2 style="margin-bottom: 1.5rem; text-align: center;">Welcome Back</h2>
+            <p style="color: var(--text-secondary); text-align: center; margin-bottom: 2rem; font-size: 0.9rem;">(Demo
+                Mode: Any credentials will work)</p>
+
+            <div class="form-group" style="margin-bottom: 1.5rem;">
+                <label>Email Address</label>
+                <input type="email" value="student@example.com" placeholder="Enter your email"
+                    style="width: 100%; padding: 0.75rem; border-radius: 8px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.05); color: white;">
+            </div>
+
+            <div class="form-group" style="margin-bottom: 2rem;">
+                <label>Password</label>
+                <input type="password" value="password123" placeholder="Enter your password"
+                    style="width: 100%; padding: 0.75rem; border-radius: 8px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.05); color: white;">
+            </div>
+
+            <a href="demo_dashboard.html" class="btn btn-primary"
+                style="width: 100%; display: block; text-align: center;">Login as Student</a>
+            <div style="margin: 1rem 0; text-align: center; color: var(--text-secondary);">or</div>
+            <a href="demo_attendance.html" class="btn btn-outline"
+                style="width: 100%; display: block; text-align: center;">Login as Admin</a>
+        </div>
+    </div>
+</body>
+
+</html>

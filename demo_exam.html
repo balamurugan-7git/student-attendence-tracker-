@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam | ExamPro Demo</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand">ExamPro</a>
+        <div id="countdown" style="font-weight: bold; color: var(--primary-color); font-size: 1.2rem;">Time left: 14:59
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="glass-card">
+            <h2>Data Analytics Fundamentals</h2>
+            <hr style="margin: 1.5rem 0; border: 0; border-top: 1px solid var(--glass-border);">
+
+            <div class="question-block" style="margin-bottom: 2rem;">
+                <p style="font-size: 1.1rem; margin-bottom: 1rem;"><strong>Q1: Which library is used for data
+                        manipulation in Python?</strong></p>
+                <label class="option-label"
+                    style="display: block; padding: 1rem; margin-bottom: 0.5rem; background: rgba(255,255,255,0.05); border-radius: 8px; cursor: pointer;">
+                    <input type="radio" name="q1"> Matplotlib
+                </label>
+                <label class="option-label"
+                    style="display: block; padding: 1rem; margin-bottom: 0.5rem; background: rgba(99,102,241,0.1); border: 1px solid var(--primary-color); border-radius: 8px; cursor: pointer;">
+                    <input type="radio" name="q1" checked> Pandas
+                </label>
+                <label class="option-label"
+                    style="display: block; padding: 1rem; margin-bottom: 0.5rem; background: rgba(255,255,255,0.05); border-radius: 8px; cursor: pointer;">
+                    <input type="radio" name="q1"> Requests
+                </label>
+            </div>
+
+            <div class="question-block" style="margin-bottom: 2rem;">
+                <p style="font-size: 1.1rem; margin-bottom: 1rem;"><strong>Q2: What is the term for a row in a Pandas
+                        DataFrame?</strong></p>
+                <label class="option-label"
+                    style="display: block; padding: 1rem; margin-bottom: 0.5rem; background: rgba(255,255,255,0.05); border-radius: 8px; cursor: pointer;">
+                    <input type="radio" name="q2"> Series
+                </label>
+                <label class="option-label"
+                    style="display: block; padding: 1rem; margin-bottom: 0.5rem; background: rgba(255,255,255,0.05); border-radius: 8px; cursor: pointer;">
+                    <input type="radio" name="q2"> Column
+                </label>
+                <label class="option-label"
+                    style="display: block; padding: 1rem; margin-bottom: 0.5rem; background: rgba(99,102,241,0.1); border: 1px solid var(--primary-color); border-radius: 8px; cursor: pointer;">
+                    <input type="radio" name="q2" checked> Observation/Index
+                </label>
+            </div>
+
+            <a href="demo_result.html" class="btn btn-primary" style="padding: 1rem 3rem;">Submit Exam</a>
+        </div>
+    </div>
+
+    <script>
+        let time = 899;
+        setInterval(() => {
+            let mins = Math.floor(time / 60);
+            let secs = time % 60;
+            document.getElementById('countdown').innerText = `Time left: ${mins}:${secs < 10 ? '0' : ''}${secs}`;
+            if (time > 0) time--;
+        }, 1000);
+    </script>
+</body>
+
+</html>
